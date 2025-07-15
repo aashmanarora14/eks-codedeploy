@@ -1,0 +1,16 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - groups:
+      - system:masters
+      rolearn: arn:aws:iam::545220419294:role/CodeBuildKubectlRole
+      username: CodeBuildKubectlRole
+  mapUsers: |
+    []
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2025-07-14T11:38:01Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "743011"
+  uid: b3235d56-43d3-4efd-8d6f-25437d6467c9
